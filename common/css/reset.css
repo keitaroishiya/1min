@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+
+/*  reset
+-----------------------------------------------------------*/
+html,body,div,
+h1,h2,h3,h4,h5,h6,
+dl,dt,dd,ul,ol,li,
+p,pre,form,fieldset,input,textarea,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: ＭＳ Ｐゴシック;
+}
+body {
+	font-size: 13px;
+	/*1.231 */;
+	*font-size: 81.25%; /*for IE6,IE7*/
+}
+html>/**/body {
+	font-size /*\**/: 81.25%\9;
+}
+
+h1,h2,h3,h4,h5,h6,
+dt,dd,li,
+p,
+pre,blockquote,q,address,
+fieldset,input,textarea,
+th,td { 
+	font-size: 100%;
+	line-height: 1.5;
+}
+table th {
+	text-align: left;
+	font-weight: normal;
+}
+ul,ol,li {
+	list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,
+em,strong,pre,address {
+	font-style: normal;
+	font-weight: normal;
+}
+img,
+a,
+a img {
+	border:0;
+}
+img {
+	vertical-align: bottom;
+}
+a {
+/*	text-decoration: none;*/
+}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+/*	text-decoration: underline;*/
+}
+
+
+/*  clear
+-----------------------------------------------------------*/
+.clearfix:after,
+div#information:after,
+div#map:after,
+div#member ul:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix,
+div#information,
+div#map,
+div#member ul {
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix,
+* html div#information,
+* html div#map,
+* html div#member ul{height: 1%;}
+.clearfix,
+div#information,
+div#map,
+div#member ul{display: block;}
+/* End hide from IE-mac */
+
+
+/*  class
+-----------------------------------------------------------*/
+/* align */
+.tar { text-align: right !important; }
+.tac { text-align: center !important; }
+.tal { text-align: left !important; }
+
+/* vertical-align: */
+.vt { vertical-align: top !important; }
+.vm { vertical-align: middle !important; }
+.vb { vertical-align: bottom !important; }
+
+/* margin */
+.mt5 { margin-top: 5px !important; }
+.mt10 { margin-top: 10px !important; }
+.mt11 { margin-top: 11px !important; }
+.mt15 { margin-top: 15px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt25 { margin-top: 25px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt35 { margin-top: 35px !important; }
+.mt40 { margin-top: 40px !important; }
+.mt45 { margin-top: 45px !important; }
+.mt50 { margin-top: 50px !important; }
+.mt55 { margin-top: 55px !important; }
+.mt60 { margin-top: 60px !important; }
+
+.mr0 { margin-right: 0px !important; }
+.mr5 { margin-right: 5px !important; }
+.mr10 { margin-right: 10px !important; }
+.mr15 { margin-right: 15px !important; }
+.mr20 { margin-right: 20px !important; }
+.mr25 { margin-right: 25px !important; }
+
+.mb5 { margin-bottom: 5px !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb15 { margin-bottom: 15px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb25 { margin-bottom: 25px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb35 { margin-bottom: 35px !important; }
+.mb40 { margin-bottom: 40px !important; }
+
+.ml5 { margin-left: 5px !important; }
+.ml10 { margin-left: 10px !important; }
+.ml15 { margin-left: 15px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml25 { margin-left: 25px !important; }
+
+.ml05em { margin-left: 0.5em !important; }
+.ml06em { margin-left: 0.6em !important; }
+.ml07em { margin-left: 0.7em !important; }
+.ml08em { margin-left: 0.8em !important; }
+.ml09em { margin-left: 0.9em !important; }
+.ml10em { margin-left: 1.0em !important; }
+.ml11em { margin-left: 1.1em !important; }
+.ml12em { margin-left: 1.2em !important; }
+.ml13em { margin-left: 1.3em !important; }
+.ml14em { margin-left: 1.4em !important; }
+.ml15em { margin-left: 1.5em !important; }
+.ml16em { margin-left: 1.6em !important; }
+.ml17em { margin-left: 1.7em !important; }
+.ml18em { margin-left: 1.8em !important; }
+.ml19em { margin-left: 1.9em !important; }
+.ml20em { margin-left: 2.0em !important; }
+
+
+
+/* セクション区切り */
+.break5 { margin-top: 10px; margin-bottom: 10px; }
+.break10 { margin-top: 10px; margin-bottom: 10px; }
+.break15 { margin-top: 10px; margin-bottom: 10px; }
+.break20 { margin-top: 10px; margin-bottom: 10px; }
+
+/* インデント */
+.indent05 { padding-left: 0.5em; text-indent: -0.5em; }
+.indent06 { padding-left: 0.6em; text-indent: -0.6em; }
+.indent07 { padding-left: 0.7em; text-indent: -0.7em; }
+.indent08 { padding-left: 0.8em; text-indent: -0.8em; }
+.indent09 { padding-left: 0.9em; text-indent: -0.9em; }
+.indent10 { padding-left: 1em; text-indent: -1em; }
+.indent11 { padding-left: 1.1em; text-indent: -1.1em; }
+.indent12 { padding-left: 1.2em; text-indent: -1.2em; }
+.indent13 { padding-left: 1.3em; text-indent: -1.3em; }
+.indent14 { padding-left: 1.4em; text-indent: -1.4em; }
+.indent15 { padding-left: 1.5em; text-indent: -1.5em; }
+.indent16 { padding-left: 1.6em; text-indent: -1.6em; }
+.indent17 { padding-left: 1.7em; text-indent: -1.7em; }
+.indent18 { padding-left: 1.8em; text-indent: -1.8em; }
+.indent19 { padding-left: 1.9em; text-indent: -1.9em; }
+
+
+

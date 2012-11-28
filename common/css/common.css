@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+	text-align: center;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	background: #2B2E00;
+	-webkit-text-size-adjust:none;
+	font-family: Arial, Helvatica;
+}
+#wrapper {
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 93%;
+	position:absolute;
+}
+
+/*  ヘッダ
+-----------------------------------------------------------*/
+div#header {
+}
+
+/*  Timer
+-----------------------------------------------------------*/
+#canvas {
+	margin: 0;
+	padding: 0;
+	//border: solid 1px #000000;
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
+
+#time {
+	font-weight: bold;
+	font-size: 200px;
+	color: #fff;
+	text-align: center;
+}
+
+/*  Speaker Staff
+-----------------------------------------------------------*/
+#staff_name {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+}
+
+#speaker {
+	font-size: 30px;
+}
+
+#present_name {
+	margin-top: -10px;
+	font-size: 70px;
+	cursor: pointer;
+}
+
+#next_speaker {
+	font-size: 20px;
+}
+
+#next_name {
+	margin-top: -8px;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+/*  Controller
+-----------------------------------------------------------*/
+#controller {
+	width: 350px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+}
+
+#seconds {
+	width: 150px;
+	margin: 0 0 0 0;
+	text-align: center;
+	border: 1px #fff solid;
+	background: #2B2E00;
+	float: left;
+	font-weight: bold;
+	font-size: 35px;
+	color: #fff;
+	font-family: Arial, Helvatica;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+#sec_label {
+	padding: 7px 0 0 20px;
+	font-size: 35px;
+	float: left;
+}
+
+a#start_btn,
+a#reset_btn {
+	width: 300px;
+	margin: 20px 0 0 0;
+	padding: 10px;
+	border: 1px #fff solid;
+	text-align: center;
+	font-size: 35px;
+	float: left;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	cursor: pointer;
+}
+
+a#start_btn:hover,
+a#reset_btn:hover {
+	background: #fff;
+	color: #2B2E00;
+}
+/* フッター
+-----------------------------------------------------------*/
+div#footer {
+}
+
