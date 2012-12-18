@@ -25,7 +25,8 @@ var staff = [
 				"KENTA SUGIYAMA",
 				"RUMI SAKATA",
 				"YUYA FUJISHIRO",
-				"REIMI CHIBA"
+				"REIMI CHIBA",
+				"TAKESHI AMANO"
 				];
 
 var colorNo = Math.floor(Math.random() * 2);
@@ -93,6 +94,45 @@ function init(){
 											staffN++;
 											changeName();
 										});
+	document.onkeydown = function(e) {
+		var keycode = e.keyCode; 
+		
+		switch(keycode){
+			case 38:	case 39:	case 40:	case 37:	case 83:	case 82:	case 13:	case 32:
+			e.preventDefault(); 
+			e.stopPropagation();
+			break;
+		}
+
+		switch(keycode){
+			case 38: // ↑
+			case 39: // →
+			staffN--;	changeName();
+			break;
+			
+			case 40: // ↓
+			case 37: // ←
+			staffN++;	changeName();
+			break;
+			
+			case 32:
+			case 83: // s
+			clickHandler();
+			break;
+			
+			case 13:
+			case 82: // r
+			resetHandler();
+			break;
+			/*
+			case 78: // n
+			e.preventDefault(); 
+			e.stopPropagation();
+			$("#seconds").focus();
+			break;
+			*/
+		}
+	}
 	
 	resetHandler();
 	changeName();
@@ -104,7 +144,7 @@ function init(){
 									sec = Number($(this).val());
 									alert("CHANGE");
 								}).change();
-								//*/
+								*/
 }
 
 
