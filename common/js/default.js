@@ -105,13 +105,13 @@ function init(){
 		}
 
 		switch(keycode){
+			case 37: // ←
 			case 38: // ↑
-			case 39: // →
 			staffN--;	changeName();
 			break;
 			
+			case 39: // →
 			case 40: // ↓
-			case 37: // ←
 			staffN++;	changeName();
 			break;
 			
